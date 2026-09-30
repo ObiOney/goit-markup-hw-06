@@ -34,18 +34,47 @@ address {
 
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
+/* Helper class */
+
+.hide {
+    display: none;
+}
+
+/* Base type */
+
 .section {
+    padding: 96px 0;
+}
+
+@media only screen and (min-width: 1168px) {
+  .section {
     padding: 120px 0;
+  }
 }
 
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+    max-width: 320px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container
+   {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
 .sr-only {
     position: absolute;
     white-space: nowrap;
@@ -60,10 +89,12 @@ img {
 }
 
 .section-title {
+    margin-bottom: 72px;
+    
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     color: #2e2f42;
-    margin-bottom: 72px;
 }
+
