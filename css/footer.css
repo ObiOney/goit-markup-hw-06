@@ -98,7 +98,6 @@
 .footer-form-input {
     padding: 8px 16px;
     width: 100%;
-    /* width: 264px; */
     height: 40px;
     
     font-size: 12px;
@@ -173,6 +172,10 @@
     flex-direction: row;
     gap: 24px;  
   }
+  .footer-form-input {
+    width: 264px;
+  }
+  
 
   .footer-link {
     text-align: left;
@@ -191,7 +194,7 @@
 }
 }
 
-@media only screen and (min-width: 1168px) {
+@media only screen and (min-width: 1158px) {
   .footer {
     padding: 100px 0;
   }
