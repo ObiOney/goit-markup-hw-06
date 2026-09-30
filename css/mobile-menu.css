@@ -40,7 +40,7 @@
     height: 100%;
 }
 
-.mobile-menu-btn {
+.mobile-menu-btn-open {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,17 +53,17 @@
     transition-property: color;
 }
 
-.header .mobile-menu-btn {
+.header .mobile-menu-btn-open {
     margin-left: auto;
 }
 
 @media only screen and (min-width: 768px) {
-    .header .mobile-menu-btn {
+    .header .mobile-menu-btn-open {
         display: none;
     }
 }
 
-.mobile-menu .mobile-menu-btn {
+.mobile-menu .mobile-menu-btn-close {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -79,8 +79,8 @@
     transition-property: background-color, border-color;
 }
 
-.mobile-menu .mobile-menu-btn:hover,
-.mobile-menu .mobile-menu-btn:focus {
+.mobile-menu .mobile-menu-btn-close:hover,
+.mobile-menu .mobile-menu-btn-close:focus {
     border-color:#404bbf;
     background-color: #404bbf;
 }
@@ -93,13 +93,13 @@
     transition-property: color;
 }
 
-.mobile-menu-btn:hover .mobile-menu-btn-icon,
-.mobile-menu-btn:focus .mobile-menu-btn-icon {
+.mobile-menu-btn-open:hover .mobile-menu-btn-icon,
+.mobile-menu-btn-open:focus .mobile-menu-btn-icon {
     color: #404bbf;
 }
 
-.mobile-menu .mobile-menu-btn:hover, 
-.mobile-menu .mobile-menu-btn:focus  > .mobile-menu-btn-icon {
+.mobile-menu .mobile-menu-btn-close:hover, 
+.mobile-menu .mobile-menu-btn-close:focus  > .mobile-menu-btn-icon {
     color: #fff;
 }
 .mobile-menu-list {
@@ -126,6 +126,7 @@
 }
 
 .mobile-menu .contacts-list {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
