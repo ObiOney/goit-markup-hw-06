@@ -22,6 +22,7 @@
 }
 
 .logo {
+    margin-right: auto;
     padding: 16px 0;
 
     font-family: "Raleway", sans-serif;
@@ -36,24 +37,18 @@
 
 @media only screen and (min-width: 768px) {
     .logo {
+        margin-right: 120px;
         padding: 24px 0;
     }
 }
 
 .header-nav {
-    margin-left: 76px;
     margin-right: auto;
 }
 
-@media only screen and (min-width: 768px) {
-  .header-nav {
-    margin-left: 120px;
-  }
-}
-
 @media only screen and (min-width: 1158px) {
-    .header-nav {
-        margin-left: 76px;
+    .logo {
+        margin-right: 76px;
     }
 }
 
