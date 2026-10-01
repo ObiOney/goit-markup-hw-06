@@ -32,18 +32,7 @@
     height: 100%;
 }
 
-.header .mobile-menu-btn-open {
-    display: flex;
-
-    padding: 0;
-    background-color: transparent;
-    border: none;
-
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-}
-
-.mobile-menu .mobile-menu-btn-close {
+.mobile-menu-btn-close {
     position: absolute;
     top: 24px;
     right: 24px;
@@ -59,27 +48,15 @@
     transition-property: background-color, border-color;
 }
 
-.mobile-menu .mobile-menu-btn-close:hover,
-.mobile-menu .mobile-menu-btn-close:focus {
+.mobile-menu-btn-close:hover,
+.mobile-menu-btn-close:focus {
     border-color:#404bbf;
     background-color: #404bbf;
 }
 
 
-.mobile-menu-btn-icon {
-    color: #2E2F42;
-
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color;
-}
-
-.mobile-menu-btn-open:hover .mobile-menu-btn-icon,
-.mobile-menu-btn-open:focus .mobile-menu-btn-icon {
-    color: #404bbf;
-}
-
-.mobile-menu .mobile-menu-btn-close:hover, 
-.mobile-menu .mobile-menu-btn-close:focus  > .mobile-menu-btn-icon {
+.mobile-menu-btn-close:hover, 
+.mobile-menu-btn-close:focus  > .mobile-menu-btn-icon {
     color: #fff;
 }
 
@@ -139,9 +116,5 @@
 
   .mobile-menu .contacts {
     display: flex;
-  }
-
-  .header .mobile-menu-btn-open {
-    display: none;
   }
 }

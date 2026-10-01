@@ -143,3 +143,32 @@
     padding: 24px 0;
   }
 }
+
+.mobile-menu-btn-open {
+    display: flex;
+
+    padding: 0;
+    background-color: transparent;
+    border: none;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
+
+.mobile-menu-btn-icon {
+    color: #2E2F42;
+
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
+
+.mobile-menu-btn-open:hover .mobile-menu-btn-icon,
+.mobile-menu-btn-open:focus .mobile-menu-btn-icon {
+    color: #404bbf;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu-btn-open {
+        display: none;
+    }
+}

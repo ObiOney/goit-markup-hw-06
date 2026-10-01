@@ -3,7 +3,7 @@
     background-color: #2e2f42;
 }
 
-.footer-web {
+.container.footer-web {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -158,7 +158,7 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .footer-web {
+  .container.footer-web {
     padding: 0 108px;
     gap: 72px 24px;   
   }
@@ -176,7 +176,6 @@
     width: 264px;
   }
   
-
   .footer-link {
     text-align: left;
   }
@@ -199,7 +198,7 @@
     padding: 100px 0;
   }
 
-  .footer-web {
+  .container.footer-web {
     padding: 0;
     gap: 0;  
   }
